@@ -9,8 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, my name is Jenan")
-            .padding()
+        ZStack{
+            Image("background")
+                .resizable()
+                
+            
+            VStack{
+                Text("Jenan Alibrahim")
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                
+                Text("Computer enginner student - kuniv")
+                    .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                
+                HStack{
+                    
+                }
+
+            }
+        }
+                        .ignoresSafeArea()
     }
 }
 
