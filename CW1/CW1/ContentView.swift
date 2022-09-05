@@ -48,8 +48,11 @@ struct ContentView: View {
                     Image(systemName: "arrow.right.to.line")
                         .foregroundColor(.white)
                 }//HStack
+                
             }//VStack
+            
         }//ZStack
+        
         .ignoresSafeArea()
     }
 }
