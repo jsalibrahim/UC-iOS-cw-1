@@ -10,26 +10,47 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Image("background")
+            Image("bg")
                 .resizable()
-                
             
             VStack{
+                Image(systemName: "applelogo")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                Text("IOS Course")
+                    .foregroundColor(.white)
+                    .font(.system(size: 13))
+                    .bold()
+              
                 Text("Jenan Alibrahim")
                     .bold()
                     .font(.largeTitle)
-                    .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                    .foregroundColor(.white)
+                    .padding()
                 
-                Text("Computer enginner student - kuniv")
-                    .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                Text("Computer engineer student - kuniv")
+                    .foregroundColor(.white)
+                
+                Text("")
+                Text("")
+                Text("")
+                Text("")
                 
                 HStack{
-                    
-                }
-
-            }
-        }
-                        .ignoresSafeArea()
+                    Image(systemName: "heart")
+                        .foregroundColor(.white)
+                    Text("")
+                    Text("")
+                    Image(systemName: "bubble.left")
+                        .foregroundColor(.white)
+                    Text("")
+                    Text("")
+                    Image(systemName: "arrow.right.to.line")
+                        .foregroundColor(.white)
+                }//HStack
+            }//VStack
+        }//ZStack
+        .ignoresSafeArea()
     }
 }
 
